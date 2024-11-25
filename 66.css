@@ -1,0 +1,1074 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif; /* Updated font */
+}
+
+body {
+  background-color: #edf6f9;
+  color: #edf6f9;
+  font-size: 1rem;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: #edf6f9; /* Brand color */
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #ffd700;
+}
+
+.cta-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #edf6f9; /* Golden button color */
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 2rem;
+  color: #fff;
+  background: #333;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Game Features Section */
+.game-features {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #1c1c1c;
+}
+
+.game-features h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.game-features p {
+  font-size: 1.2rem;
+}
+
+/* Promotions Section */
+.promotions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 3rem 2rem;
+  background-color: #333;
+}
+
+.promotions h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  grid-column: span 2;
+}
+
+.promotion {
+  background-color: #d00000;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.promotion h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffd700;
+}
+
+.promotion img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.bonus-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.bonus-images img {
+  width: 48%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 3rem 2rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .promotions {
+    grid-template-columns: 1fr;
+  }
+
+  .bonus-images {
+    flex-direction: column;
+  }
+
+  .bonus-images img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>66 Lottery - Game App Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <img src="https://i.ibb.co/dMRJwhv/66-Lottery-Logo.png" alt="66 Lottery Logo">
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#how-to-play">How to Play?</a></li>
+        <li><a href="#promotions">Promotions</a></li>
+      </ul>
+      <a href="https://www.66lottery28.com/#/pages/login/register?invitationCode=7585818220" target="_blank">
+        <button class="cta-button">Register</button>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to 66 Lottery</h1>
+      <p>Your #1 platform for exciting games and big wins!</p>
+      <a href="https://www.66lottery28.com/#/pages/login/register?invitationCode=7585818220" target="_blank">
+        <button class="cta-button">JOIN NOW</button>
+      </a>
+    </div>
+    <div class="hero-image">
+      <img src="https://i.ibb.co/56HfT7M/hero-banner.jpg" alt="Hero Banner">
+    </div>
+  </section>
+
+  <!-- Game Features Section -->
+  <section class="game-features" id="home">
+    <h2>Exciting Jackpot Games</h2>
+    <p>Join us for thrilling games with huge jackpots waiting to be won!</p>
+  </section>
+
+  <!-- Promotions Section -->
+  <section class="promotions" id="promotions">
+    <h2>Promotions</h2>
+    <div class="promotion">
+      <h3>Attendance Bonus</h3>
+      <div class="bonus-images">
+        <img src="https://i.ibb.co/x7NxnDQ/attendance-bonus.jpg" alt="Attendance Bonus">
+        <img src="https://i.ibb.co/MMfF5CS/attendance-bonus2.jpg" alt="Attendance Bonus 2">
+      </div>
+    </div>
+    <div class="promotion">
+      <h3>First Deposits Bonus</h3>
+      <img src="https://i.ibb.co/tDZdxM2/first-deposit.jpg" alt="First Deposit Bonus">
+    </div>
+    <div class="promotion">
+      <h3>Invitation Bonus</h3>
+      <div class="bonus-images">
+        <img src="https://i.ibb.co/tDZdxM2/invitation-bonus.jpg" alt="Invitation Bonus">
+        <img src="https://i.ibb.co/yq1s29X/invitation-bonus2.jpg" alt="Invitation Bonus 2">
+      </div>
+    </div>
+    <div class="promotion">
+      <h3>Deposit Bonus</h3>
+      <img src="https://i.ibb.co/jWvRThj/deposit-bonus.jpg" alt="Deposit Bonus">
+    </div>
+  </section>
+
+</body>
+</html>
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif; /* Font */
+}
+
+body {
+  background-color: #f8d7da; /* Light red background */
+  color: #333;  /* Dark text for contrast */
+  font-size: 1rem;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: #d00000; /* Brand color */
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #ffd700;
+}
+
+.cta-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #ffd700; /* Golden button color */
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 2rem;
+  color: #fff;
+  background: #333;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 4rem;  /* Increased font size */
+  margin-bottom: 1rem;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif; /* Font */
+}
+
+body {
+  background-color: #f8d7da; /* Light red background */
+  color: #333;  /* Dark text for contrast */
+  font-size: 1rem;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: #d00000; /* Brand color */
+}
+
+.logo img {
+  height: 60px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #ffd700;
+}
+
+.cta-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #ffd700; /* Golden button color */
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;  /* Center the content */
+  align-items: center;
+  padding: 5rem 2rem;
+  color: #fff;
+  background: #333;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 80%;  /* Allow some breathing space */
+}
+
+.hero-content h1 {
+  font-size: 4rem;  /* Increased font size */
+  margin-bottom: 1rem;
+  color: #d00000;  /* Red color for the tagline */
+}
+
+.hero-content p {
+  font-size: 1.5rem;  /* Larger text for readability */
+  margin-bottom: 2rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Game Features Section */
+.game-features {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #1c1c1c;
+}
+
+.game-features h2 {
+  font-size: 2.5rem;  /* Larger title size */
+  margin-bottom: 1.5rem;  /* Increased spacing */
+  font-weight: bold;
+}
+
+.game-features p {
+  font-size: 1.2rem;
+}
+
+/* Promotions Section */
+.promotions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 3rem 2rem;
+  background-color: #333;
+}
+
+.promotions h2 {
+  text-align: center;
+  font-size: 3rem;  /* Larger title size */
+  margin-bottom: 2rem;
+  grid-column: span 2;
+  font-weight: bold;
+}
+
+.promotion {
+  background-color: #d00000;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.promotion h3 {
+  font-size: 2rem;  /* Larger promotion title size */
+  margin-bottom: 1rem;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.promotion img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.bonus-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.bonus-images img {
+  width: 48%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 3rem 2rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;  /* Adjusted for smaller screens */
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .promotions {
+    grid-template-columns: 1fr;
+  }
+
+  .bonus-images {
+    flex-direction: column;
+  }
+
+  .bonus-images img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;  /* Center the content */
+  align-items: center;
+  padding: 5rem 2rem;
+  color: #fff;
+  background: #333;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 80%;  /* Allow some breathing space */
+}
+
+.hero-content h1 {
+  font-size: 4rem;  /* Increased font size */
+  margin-bottom: 1rem;
+  color: #ffbe0b;  /* New color for the tagline */
+}
+
+.hero-content p {
+  font-size: 1.5rem;  /* Larger text for readability */
+  margin-bottom: 2rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Game Features Section */
+.game-features {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #1c1c1c;
+}
+
+.game-features h2 {
+  font-size: 2.5rem;  /* Larger title size */
+  margin-bottom: 1.5rem;  /* Increased spacing */
+  font-weight: bold;
+  color: #ffc300;  /* Set color to golden yellow */
+}
+
+.game-features p {
+  font-size: 1.2rem;
+  color: #ffc300;  /* Set color to golden yellow */
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: #d00000; /* Brand color */
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav {
+  flex-grow: 1;  /* This will make the navigation take available space */
+  display: flex;
+  justify-content: center;  /* Center the navigation items */
+}
+
+.nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #ffd700;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: #d00000; /* Brand color */
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav {
+  flex-grow: 1;  /* This will make the navigation take available space */
+  display: flex;
+  justify-content: center;  /* Center the navigation items */
+}
+
+.nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #ffd700;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.footer-links ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.footer-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-media a {
+  margin: 0 10px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #d00000;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .promotions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links ul {
+    text-align: center;
+  }
+}
+
+.how-to-play {
+  text-align: center;
+  padding: 40px;
+}
+
+.video-container video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.hero-content h1 {
+  font-family:  /*Gentona */ 
+  font-size: 4rem;  /* Adjusted font size */
+  margin-bottom: 1rem;
+  color: #ffbe0b;  /* ffbe0b */
+}
+ /* Change the entire page background color to white */
+body, html {
+  background-color: white;
+  color: White; /* Ensures text remains visible */
+}
+ /* Ensure the class or element for the tagline is targeted */
+.tagline {
+    font-family: 'Gentona', Gentona;
+    font-weight: 700;  /* Optional, depending on the style you prefer */
+}
+.hero-content h1 {
+  font-family: 'Gentona', Gentona; /* Apply Gentona font */
+  font-size: 4rem;  /* Adjust font size */
+  margin-bottom: 1rem;
+  color: #ffbe0b;  /* Update tagline color */
+  font-weight: bold; /* Add bold styling if needed */
+}
+.hero-content h1 {
+  font-family: 'Gentona', Gentona; /* Apply Gentona font */
+  font-size: 4rem;  /* Adjust font size */
+  margin-bottom: 1rem;
+  color: #ffbe0b;  /* Update tagline color */
+  font-weight: bold; /* Add bold styling if needed */
+}
+
+/* Download Section */
+.download-section {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.download-section h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #d00000; /* Red color for the heading */
+  margin-bottom: 1rem;
+}
+
+.download-section p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.download-btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #d00000; /* Red button */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #a50000; /* Darker red on hover */
+}
+/* Why Choose Section */
+.why-choose-section {
+  padding: 4rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.why-choose-section h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #d00000;
+  margin-bottom: 2rem;
+}
+
+.why-choose-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.reason {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reason h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #d00000;
+  margin-bottom: 1rem;
+}
+
+.reason p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hover Effect for Reason Boxes */
+.reason:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+/* Join the Community Section */
+.join-community-section {
+  padding: 4rem 1rem;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.join-community-section h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #d00000;
+  margin-bottom: 2rem;
+}
+
+.join-button {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.join-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #d00000;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.join-btn span {
+  margin-right: 10px;
+}
+
+.join-btn:hover {
+  background-color: #a70000;
+  transform: scale(1.05);
+}
+
+/* Optional: Add an icon to the button */
+.join-btn::before {
+  content: '\f0e0'; /* Telegram icon Unicode */
+  font-family: 'Font Awesome 5 Free'; /* Assuming Font Awesome is included */
+  font-weight: 900;
+  margin-right: 8px;
+}
+/* Join the Community Section */
+.join-community-section {
+  padding: 4rem 1rem;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.join-community-section h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #d00000;
+  margin-bottom: 1rem;
+}
+
+.community-description {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.join-button {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.join-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #d00000;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.join-btn span {
+  margin-right: 10px;
+}
+
+.join-btn:hover {
+  background-color: #a70000;
+  transform: scale(1.05);
+}
+
+/* Optional: Add an icon to the button */
+.join-btn::before {
+  content: '\f0e0'; /* Telegram icon Unicode */
+  font-family: 'Font Awesome 5 Free'; /* Assuming Font Awesome is included */
+  font-weight: 900;
+  margin-right: 8px;
+}
+.winning-section {
+    background-color: #ffffff; /* White background for the new section */
+    padding: 40px; /* Add padding for spacing */
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Margin for spacing around the section */
+    border-radius: 8px; /* Optional rounded corners */
+}
+
+.winning-section h2 {
+    color: #000000; /* Black color for the title */
+    font-size: 28px; /* Adjust font size as needed */
+    font-family: 'DM Sans', sans-serif; /* Example font */
+}
+
+.winning-section p {
+    color: #d62828; /* Dark gray text for the description */
+    font-size: 16px; /* Adjust font size for the paragraph */
+    margin-top: 10px;
+}
+.ending-section {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 40px; /* Spacing inside the section */
+    text-align: center; /* Centered text */
+    margin-top: 40px; /* Spacing from the section above */
+    border-radius: 8px; /* Optional rounded corners */
+}
+
+.ending-section h2 {
+    color: #d00000; /* Your brand's red color for the title */
+    font-size: 30px; /* Larger font size for the title */
+    font-family: 'DM Sans', sans-serif; /* Font for the title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.ending-section p {
+    color: #333333; /* Dark gray text for the description */
+    font-size: 18px; /* Readable font size */
+    margin-bottom: 20px; /* Space below the description */
+}
+
+.cta-button {
+    background-color: #d00000; /* Your brand's red color for the button */
+    color: white; /* White text for the button */
+    padding: 12px 25px; /* Button padding */
+    font-size: 18px; /* Font size of the button text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.cta-button:hover {
+    background-color: #b00000; /* Darker red on hover */
+}
+.copyright-section {
+    background-color: #333333; /* Dark background color */
+    color: white; /* White text for contrast */
+    text-align: center; /* Center the text */
+    padding: 15px; /* Padding for spacing */
+    font-size: 14px; /* Smaller text size */
+}
+
+.copyright-section p {
+    margin: 0; /* Remove default margin */
+}
+.welcome-title {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800; /* ExtraBold 800 */
+}
+.hero h1 {
+  font-family: 'Outfit', sans-serif; /* Apply Outfit font */
+  font-weight: 800; /* ExtraBold weight */
+  font-size: 3rem; /* Adjust font size as needed */
+  color: #003049; /* Dark color for text */
+}
+/* Add Outfit font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800&display=swap');
+
+.hero {
+  background-color: #ffffff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #003049;
+}
+
+.hero h1 {
+  font-family: 'Outfit', sans-serif; /* Apply Outfit font */
+  font-weight: 800; /* ExtraBold weight */
+  font-size: 3rem; /* Adjust font size */
+  color: #003049; /* Dark text for readability */
+}
+.hero {
+  background-color: #003049; /* Change the background color */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff; /* Ensure text is visible on the dark background */
+}
+
+.hero h1 {
+  font-family: 'Outfit', sans-serif; /* Apply Outfit font */
+  font-weight: 800; /* ExtraBold weight */
+  font-size: 3rem; /* Adjust font size */
+  color: #ffffff; /* Light text color to contrast with dark background */
+}
+/* Add Outfit font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800&display=swap');
+
+.hero {
+  background-color: #003049; /* Hero section background color */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff; /* Light color text */
+}
+
+.hero h1 {
+  font-family: 'Outfit', sans-serif; /* Apply Outfit font */
+  font-weight: 800; /* ExtraBold weight */
+  font-size: 3rem; /* Adjust font size */
+  color: #ffffff; /* Ensure text is white */
+}
+.hero {
+  background-image: url('reddd.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Make the background image cover the entire hero section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff; /* Text color */
+}
